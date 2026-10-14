@@ -2,7 +2,7 @@
 
 ![MinBudsjett](https://images.unsplash.com/photo-1772588627499-baefc8ab0ce7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D)
 
-MinBudsjett er en enkel budsjettapplikasjon utviklet med HTML, CSS og JavaScript.
+Budsjettenator er en enkel budsjett applikasjon utviklet med HTML, CSS og JavaScript.
 
 Målet med prosjektet er å gi brukeren en ryddig oversikt over inntekter, utgifter og disponibelt beløp gjennom et moderne og brukervennlig grensesnitt.
 
