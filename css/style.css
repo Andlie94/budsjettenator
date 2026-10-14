@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Galindo", sans-serif;
+  cursor: default;
+  color: azure;
+  background: linear-gradient(135deg, #03323a, #0f718f, #03323a);
+  background-attachment: fixed
+}
+
+nav{ 
+    display: flex; 
+        background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: end;
+    gap: 20px; 
+    list-style-type: none;
+    margin: 10px;
+}
+nav :hover {
+  color: rgb(195, 108, 108);
+}
+
+.heroSection{
+display: flex; 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 200px;
+}
+.herotext h1{
+    font-size: 6vw;
+    font-weight:900;
+    word-spacing: -20px;
+    line-height: 0.9;
+    margin-top: 100px;
+}
+.herotext p{
+    margin-top: 10px;
+    font-size: 1vw;
+    color: #8ab8c0;
+}
+.heroimgae img{
+      width: 100%;
+  max-width: 380px;
+  transform: scaleX(-1) rotate(-20deg);
+  height: auto;
+}
+.cardsection{
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card1{
+    background-color: aquamarine;
+    padding: 2px 16px;
+    width: 200px;
+    height: 200px;
+}
+.card2{
+    background-color: rgb(163, 53, 121);
+    padding: 2px 16px;
+    width: 200px;
+    height: 200px;
+}
+.card3{
+    background-color: rgb(71, 163, 53);
+    padding: 2px 16px;
+    width: 200px;
+    height: 200px;
+}
