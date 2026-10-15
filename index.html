@@ -5,46 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Min første nettside</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>budsjettappen</title>
 </head>
 
 <body>
     <header class="headerbox">
         <nav class="footerlist">
-            <li>home</li>
-            <li>about</li>
-            <li>kalkulator</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/kalk.html">kalkulator</a></li>
         </nav>
     </header>
     <main class="indexmain">
         <div class="heroSection">
             <div class="herotext">
-            <h1> Få kontroll på <br> Økonomien din</h1>
-            <p>Med Strom deb sin budsjett app kan du endelig få oversikt over privat økonomien din. -helt gratis</p>
+                <h1> Få kontroll på <br> Økonomien din</h1>
+                <p>Med Strom dev sin budsjett app kan du endelig få oversikt over privat økonomien din.</p>
+                <p>- helt gratis</p>
+                <div>
+                    <button class="budsjettknapp" onclick="window.location.href='/html/kalk.html'">
+                        Prøv kalkulator
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                </div>
             </div>
             <div class="heroimgae">
-                <img src="C:\Users\no-andstro-01\Desktop\code\img\Designer.png" alt="bilde av et budsjett ark og kalkulator på en pult">
+                <img src="C:\Users\no-andstro-01\Desktop\code\img\Designer.png"
+                    alt="bilde av et budsjett ark og kalkulator på en pult">
             </div>
             <div>
             </div>
         </div>
         <div class="cardsection">
             <div class="card1">
-                <h1>title</h1>
-                <p> Tekst inside a text</p>
+                <i class="fa-solid fa-wallet"></i>
+                <h2>Se hvor du kan spare</h2>
+                <p>med Strom dev sin budsjettkalkulator så kan du se hvor det er mulig å spare penger</p>
             </div>
             <div class="card2">
-                <h1>title</h1>
-                <p> Tekst inside a text</p>
+                <i class="fa-solid fa-receipt"></i>
+                <h2>Få oversikt</h2>
+                <p>Fyll inn dine inntekter og utgifter for få en helthetlig oversikt over din økonoi</p>
             </div>
             <div class="card3">
-                <h1>title</h1>
-                <p> Tekst inside a text</p>
+                <i class="fa-regular fa-file-pdf"></i>
+                <h2>Last ned PDF</h2>
+                <p> Ta å sett opp budsjett ditt og last ned som PDF fil etterpå.</p>
             </div>
         </div>
     </main>
     <footer>
-        <h2 class="footertext">@footer tekst</h2>
+        <p>&copy; 2026 Strom Dev. Alle rettigheter forbeholdt.</p>
     </footer>
 </body>
 

@@ -10,6 +10,10 @@ body {
   background: linear-gradient(135deg, #03323a, #0f718f, #03323a);
   background-attachment: fixed
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 nav{ 
     display: flex; 
@@ -24,19 +28,29 @@ nav{
     gap: 20px; 
     list-style-type: none;
     margin: 10px;
+    cursor: pointer;
 }
 nav :hover {
-  color: rgb(195, 108, 108);
+  color: #b7dfdf;
 }
 
+footer {
+    display: flex; 
+        background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 .heroSection{
 display: flex; 
-    gap: 20px;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .herotext h1{
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight:900;
     word-spacing: -20px;
     line-height: 0.9;
@@ -53,28 +67,82 @@ display: flex;
   transform: scaleX(-1) rotate(-20deg);
   height: auto;
 }
+
+.budsjettknapp{
+    padding: 20px;
+            background: rgba(253, 254, 255, 0.185); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #1dc6e4;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+}
+.budsjettknapp:hover{
+    background: rgba(83, 162, 241, 0.185); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color:#a3d9e9;
+    transition: 0.3s;
+}
 .cardsection{
     display: flex; 
-    gap: 20px;
+    gap: 100px;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 80px;
+}
+.cardsection i{
+font-size: xx-large;
+margin-top: 30px;
+color: #1dc6e4;
+
+}
+.cardsection h2{
+font-size: x-large;
+margin-top: 20px;
 }
 
-.card1{
-    background-color: aquamarine;
-    padding: 2px 16px;
-    width: 200px;
-    height: 200px;
+.cardsection p{
+font-size: medium;
+margin-top: 10px;
 }
-.card2{
-    background-color: rgb(163, 53, 121);
+
+
+.card1{
+    background: rgba(253, 254, 255, 0.185); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
     padding: 2px 16px;
-    width: 200px;
+    width: 320px;
     height: 200px;
+    border-radius: 10px;
+}
+
+.card2{
+     background: rgba(253, 254, 255, 0.185); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 2px 16px;
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
 }
 .card3{
-    background-color: rgb(71, 163, 53);
+     background: rgba(253, 254, 255, 0.185); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
     padding: 2px 16px;
-    width: 200px;
+    width: 320px;
     height: 200px;
+    border-radius: 10px;
 }
