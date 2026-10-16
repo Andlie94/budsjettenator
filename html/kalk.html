@@ -1,118 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/kalk.css" />
+    <link rel="stylesheet" href="../css/headerFooter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0" defer></script>
     <script src="../javascript/javascript.js" defer></script>
 
     <title>budsjettappen</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="headerbox">
-        <nav class="footerlist">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/about.html">About</a></li>
-            <li><a href="../html/kalk.html">kalkulator</a></li>
-        </nav>
+      <nav class="footerlist">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/kalk.html">kalkulator</a></li>
+      </nav>
     </header>
     <main>
-        <H1>Få budsjettet til å gå opp</H1>
-        <div>
-            <div>
-                <label for="inntekt">Inntekt</label>
-                <input type="number" id="inntekt" placeholder="Skriv inn netto lønn">
-            </div>
-
-            <div>
-                <label for="bolig">Boliglån / Husleie</label>
-                <input type="number" id="bolig" placeholder="Skriv inn boliglån eller leie">
-            </div>
-            <div>
-                <label for="forbruksgjeld">forbruksgjeld/kreditkort </label>
-                <input type="number" id="forbruksgjeld" placeholder="forbruksgjeld">
-            </div>
-
-            <div>
-                <label for="strom">Strøm</label>
-                <input type="number" id="strom" placeholder="Skriv inn strømutgifter">
-            </div>
-
-            <div>
-                <label for="internett">Internett og mobil</label>
-                <input type="number" id="internett" placeholder="Skriv inn utgifter til internett og mobil">
-            </div>
-
-            <div>
-                <label for="mat">Mat og dagligvarer</label>
-                <input type="number" id="mat" placeholder="Skriv inn matutgifter">
-            </div>
-
-            <div>
-                <label for="transport">Transport</label>
-                <input type="number" id="transport" placeholder="Skriv inn transportutgifter">
-            </div>
-
-            <div>
-                <label for="bil">Bil (drivstoff, forsikring, bompenger)</label>
-                <input type="number" id="bil" placeholder="Skriv inn bilutgifter">
-            </div>
-
-            <div>
-                <label for="forsikring">Forsikringer</label>
-                <input type="number" id="forsikring" placeholder="Skriv inn forsikringsutgifter">
-            </div>
-
-            <div>
-                <label for="lan">Andre lån og avdrag</label>
-                <input type="number" id="lan" placeholder="Skriv inn låneutgifter">
-            </div>
-
-            <div>
-                <label for="abonnement">Abonnementer</label>
-                <input type="number" id="abonnement" placeholder="Skriv inn abonnementer">
-            </div>
-
-            <div>
-                <label for="helse">Helse og medisiner</label>
-                <input type="number" id="helse" placeholder="Skriv inn helseutgifter">
-            </div>
-
-            <div>
-                <label for="klær">Klær og sko</label>
-                <input type="number" id="klaer" placeholder="Skriv inn utgifter til klær og sko">
-            </div>
-
-            <div>
-                <label for="fritid">Fritid og underholdning</label>
-                <input type="number" id="fritid" placeholder="Skriv inn fritidsutgifter">
-            </div>
-
-            <div>
-                <label for="barn">Barn og barnehage</label>
-                <input type="number" id="barn" placeholder="Skriv inn utgifter til barn">
-            </div>
-
-            <div>
-                <label for="sparing">Sparing</label>
-                <input type="number" id="sparing" placeholder="Skriv inn månedlig sparing">
-            </div>
-
-            <div>
-                <label for="annet">Andre utgifter</label>
-                <input type="number" id="annet" placeholder="Skriv inn andre utgifter">
-            </div>
-        </div>
-        <button onclick="regnUt()">Click me</button>
-        <button onclick="window.print()">Last ned som PDF</button>
+        <div class="container">
+      <h1>Få budsjettet til å gå opp</h1>
+      <div class="rightSide">
+      <div class="inputInntekter">
+        <label for="inntekt">Inntekt</label>
+        <input type="number" id="inntekt" placeholder="Skriv inn netto lønn" />
+      </div>
+      <div>
+        <h2>Tips!</h2>
+        <p>Bruk netto inntekt (etter skatt) for å få et mer nøyaktig budsjett.</p>
+      </div>
+      <div class="sammendrag">
+        <i class="fa-solid fa-chart-pie"></i>
+        <h3>sammendrag</h3>
         <p id="resultat"></p>
-        <p id="sereslutat"></p>
+      </div>
+      </div>
+        <div class="leftSide">
+          <div>
+            <label for="bolig">Boliglån / Husleie</label>
+            <input
+              type="number"
+              id="bolig"
+              placeholder="Skriv inn boliglån eller leie"
+            />
+          </div>
+          <div>
+            <label for="forbruksgjeld">forbruksgjeld/kreditkort </label>
+            <input
+              type="number"
+              id="forbruksgjeld"
+              placeholder="forbruksgjeld"
+            />
+          </div>
+
+          <div>
+            <label for="strom">Strøm</label>
+            <input
+              type="number"
+              id="strom"
+              placeholder="Skriv inn strømutgifter"
+            />
+          </div>
+
+          <div>
+            <label for="internett">Internett og mobil</label>
+            <input
+              type="number"
+              id="internett"
+              placeholder="Skriv inn utgifter til internett og mobil"
+            />
+          </div>
+
+          <div>
+            <label for="mat">Mat og dagligvarer</label>
+            <input type="number" id="mat" placeholder="Skriv inn matutgifter" />
+          </div>
+
+          <div>
+            <label for="transport">Transport</label>
+            <input
+              type="number"
+              id="transport"
+              placeholder="Skriv inn transportutgifter"
+            />
+          </div>
+          <div>
+            <label for="bil">Bil (drivstoff, forsikring, bompenger)</label>
+            <input type="number" id="bil" placeholder="Skriv inn bilutgifter" />
+          </div>
+
+          <div>
+            <label for="forsikring">Forsikringer</label>
+            <input
+              type="number"
+              id="forsikring"
+              placeholder="Skriv inn forsikringsutgifter"
+            />
+          </div>
+          </div>
+           <div class="inputContainerRight">
+          <div>
+            <label for="lan">Andre lån og avdrag</label>
+            <input
+              type="number"
+              id="lan"
+              placeholder="Skriv inn låneutgifter"
+            />
+          </div>
+          <div>
+            <label for="abonnement">Abonnementer</label>
+            <input
+              type="number"
+              id="abonnement"
+              placeholder="Skriv inn abonnementer"
+            />
+          </div>
+          <div>
+            <label for="helse">Helse og medisiner</label>
+            <input
+              type="number"
+              id="helse"
+              placeholder="Skriv inn helseutgifter"
+            />
+          </div>
+
+          <div>
+            <label for="klær">Klær og sko</label>
+            <input
+              type="number"
+              id="klaer"
+              placeholder="Skriv inn utgifter til klær og sko"
+            />
+          </div>
+
+          <div>
+            <label for="fritid">Fritid og underholdning</label>
+            <input
+              type="number"
+              id="fritid"
+              placeholder="Skriv inn fritidsutgifter"
+            />
+          </div>
+
+          <div>
+            <label for="barn">Barn og barnehage</label>
+            <input
+              type="number"
+              id="barn"
+              placeholder="Skriv inn utgifter til barn"
+            />
+          </div>
+
+          <div>
+            <label for="sparing">Sparing</label>
+            <input
+              type="number"
+              id="sparing"
+              placeholder="Skriv inn månedlig sparing"
+            />
+          </div>
+
+          <div>
+            <label for="annet">Andre utgifter</label>
+            <input
+              type="number"
+              id="annet"
+              placeholder="Skriv inn andre utgifter"
+            />
+          </div>
+        </div>
+      </div>
+      </div>
+      <button onclick="regnUt()">Click me</button>
+      <button onclick="window.print()">Last ned som PDF</button>
+      <p id="resultat"></p>
+      <p id="sereslutat"></p>
     </main>
     <footer>
-        <p>&copy; Powered by Strom Dev © 2026</p>
+      <p>&copy; Powered by Strom Dev © 2026</p>
     </footer>
-</body>
+  </body>
+</html>
