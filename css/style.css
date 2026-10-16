@@ -222,6 +222,7 @@ footer {
     height: 250px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .aboutCard2 {
@@ -235,6 +236,7 @@ footer {
     height: 250px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .aboutCard3 {
@@ -248,14 +250,44 @@ footer {
     height: 250px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
+.aboutCard1 i{
+    font-size: 3.5vw;
+    margin-top: 10px;
+}
+.aboutCard1 h3{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.aboutCard2 i{
+    font-size: 3.5vw;
+    margin-top: 10px;
+}
+.aboutCard2 h3{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.aboutCard3 i{
+    font-size: 3.5vw;
+    margin-top: 10px;
+}
+.aboutCard3 h3{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .aboutSitat {
      background: rgba(3, 36, 68, 0.185);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 2px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,18 +306,20 @@ footer {
     gap: 10px;
     flex: 0 1 auto;
     padding: 20px;
+    margin-bottom: 10;
 }
 
 .aboutSitatbox p {
-    font-size: 22px;
+    font-size: 0.8vw;
     line-height: 1.4;
     margin: 0;
     max-width: 350px;
 }
 
 .aboutSitatbox i {
-    font-size: 22px;
+    font-size: 2vw;
     color: #1dc6e4;
+    margin-right: 10px;
 }
 
 .aboutSitatinfo {
@@ -293,8 +327,6 @@ footer {
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
-    padding: 20px;
-    padding-right: 20px;
 }
 
 .vertikalstrek {
