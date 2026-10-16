@@ -44,7 +44,7 @@ Planlagte funksjoner:
 
 ## 📷Forhåndsvisning
 
-![MinBudsjett]([Designer.png](https://budsjettenator.vercel.app/index.html))
+https://budsjettenator.vercel.app/index.html
 
 ## 👨‍💻 Utvikler
 
