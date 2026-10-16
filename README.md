@@ -42,9 +42,9 @@ Planlagte funksjoner:
 - Månedlig historikk
 - Eksport av budsjettdata
 
-## 📷 [Forhåndsvisning](https://budsjettenator.vercel.app/index.html)
+## 📷Forhåndsvisning
 
-![MinBudsjett](Designer.png)
+![MinBudsjett]([Designer.png](https://budsjettenator.vercel.app/index.html))
 
 ## 👨‍💻 Utvikler
 
