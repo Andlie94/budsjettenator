@@ -21,11 +21,34 @@ function regnUt() {
 
     let budsjettet = inntekt - beregnetUtgift;
 
+    const inntektPostElement = document.querySelector(".inntektPost");
+    if (inntektPostElement) {
+        inntektPostElement.textContent = inntekt.toLocaleString("NO") + " kr";
+    }
+
+     const utgiftPostElement = document.querySelector(".utgiftPost");
+    if (utgiftPostElement) {
+        utgiftPostElement.textContent = beregnetUtgift.toLocaleString("NO") + " kr";
+    }
+
+        const inntektPostElementmob = document.querySelector(".inntektPostMob");
+    if (inntektPostElementmob) {
+        inntektPostElementmob.textContent = inntekt.toLocaleString("NO") + " kr";
+    }
+
+      const utgiftPostElementMob = document.querySelector(".utgiftPostMob");
+    if (utgiftPostElementMob) {
+        utgiftPostElementMob.textContent = beregnetUtgift.toLocaleString("NO") + " kr";
+    }
+
     document.getElementById("resultat").textContent =
         budsjettet.toLocaleString("NO") + " kr";
 
-        document.getElementById("sereslutat").textContent =
-    visStatus(budsjettet);
+    document.getElementById("resultatMob").textContent=
+    budsjettet.toLocaleString("NO") + " kr";
+
+    greenAndRed(budsjettet);
+    greenAndRedMob(budsjettet)
 }
 
 function visStatus(budsjettet) {
@@ -37,3 +60,26 @@ function visStatus(budsjettet) {
         return "Du har ikke nok. Prøv å redusere en utgift.";
     }
 }
+
+function greenAndRed(budsjettet){   
+        let resultat = document.getElementById("resultat");
+    if (budsjettet > 0) {
+  resultat.style.color = "#6EE7B7";
+} else if (budsjettet < 0) {
+  resultat.style.color = "#F87171";
+} else {
+  resultat.style.color = "white";
+}
+}
+
+function greenAndRedMob(budsjettet){
+    let resultatMob = document.getElementById("resultatMob")
+    if (budsjettet>0){
+        resultatMob.style.color = "#6EE7B7";
+    } else if (budsjettet < 0){
+        resultatMob.style.color = "#F87171";
+    }else {
+        resultatMob.style.color = "white";
+    }
+}
+
