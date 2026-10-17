@@ -51,16 +51,6 @@ function regnUt() {
     greenAndRedMob(budsjettet)
 }
 
-function visStatus(budsjettet) {
-    if (budsjettet > 0) {
-        return "Du har penger til overs!";
-    } else if (budsjettet === 0) {
-        return "Det går akkurat!";
-    } else {
-        return "Du har ikke nok. Prøv å redusere en utgift.";
-    }
-}
-
 function greenAndRed(budsjettet){   
         let resultat = document.getElementById("resultat");
     if (budsjettet > 0) {
